@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <section>
+        <h1 style="margin:0 0 20px 0">Open Source License</h1>
+        <p style="margin:0">The following software may be contained in portion of the hiworks product.<br>Please contact us if you have any concerns or questions.<br>oss@gabia.com</p>
+    </section>
+
+    <hr style="margin:30px 0">
+
+    <section style="margin-top:30px">
+        <h3 style="margin:0">HtmlAgilityPack</h3>
+        <div style="margin:5px 0 5px"><a href="https://html-agility-pack.net">https://html-agility-pack.net</a></div>
+        <p style="margin:0">Copyright 2019 ZZZ Projects,Simon Mourrier,Jeff Klawiter,Stephan Grell<br>MIT License</p>
+    </section>
+
+    <section style="margin-top:30px">
+        <h3 style="margin:0">log4net</h3>
+        <div style="margin:5px 0 5px"><a href="http://logging.apache.org/log4net">http://logging.apache.org/log4net</a></div>
+        <p style="margin:0">Copyright 2017 The Apache Software Foundation<br>Apache License, Version 2.0</p>
+    </section>
+    
+    <section style="margin-top:30px">
+        <h3 style="margin:0">GabiaGabia</h3>
+        <div style="margin:5px 0 5px"><a href="https://www.gabia.com">https://www.gabia.com</a></div>
+        <p style="margin:0">GabiaGabiaGabiaGabiaGabiaGabiaGabiaGabiaGabiaGabia<br>GabiaGabiaGabiaGabiaGabiaGabiaGabiaGabiaGabiaGabia</p>
+    </section>
+
+    <hr style="margin:30px 0">
+
+    <section style="margin-top:30px">
+        <h3 style="margin:0">Apache License 2.0</h3>
+        <p>Apache License, Version 2.0</p>
+        <p>Apache License<br>Version 2.0, January 2004<br>http://www.apache.org/licenses/</p>
+        <p>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+        <p>1. Definitions.</p>
+        <p>"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.</p>
+        <p>"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</p>
+        <p>"Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.</p>
+        <p>"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.</p>
+        <p>"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.</p>
+        <p>"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.</p>
+        <p>"Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).</p>
+        <p>"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.</p>
+        <p>"Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."</p>
+        <p>"Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.</p>
+    </section>
+
+    <hr style="margin:30px 0">
+
+    <section style="margin-top:30px">
+        <h3 style="margin:0">MIT License</h3>
+        <p>The MIT License</p>
+        <p>Copyright (c) &lt;year&gt; &lt;copyright holders&gt;</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    </section>
+
+    <hr style="margin:30px 0">
+
+    <section style="margin-top:30px">
+        <h3 style="margin:0">BSD 3-Clause License</h3>
+        <p>The BSD 3-Clause License</p>
+        <p>The following is a BSD 3-Clause ("BSD New" or "BSD Simplified") license template. To generate your own license, change the values of OWNER, ORGANIZATION and YEAR from their original values as given here, and substitute your own. Note: You may omit clause 3 and still be OSD-conformant. Despite its colloquial name "BSD New", this is not the newest version of the BSD license; it was followed by the even newer BSD-2-Clause version, sometimes known as the "Simplified BSD License". On January 9th, 2008 the OSI Board approved BSD-2-Clause, which is used by FreeBSD and others. It omits the final "no-endorsement" clause and is thus roughly equivalent to the MIT License.</p>
+        <p>
+            Historical Background: The original license used on BSD Unix had four clauses. The advertising clause (the third of four clauses) required you to acknowledge use of U.C. Berkeley code in your advertising of any product using that code. It was officially rescinded by the Director of the Office of Technology Licensing of the University of California on July 22nd, 1999. He states that clause 3 is "hereby deleted in its entirety." The four clause license has not been approved by OSI. The license below does not contain the advertising clause.
+            <br>This prelude is not part of the license.
+            <br>= Regents of the University of California
+            <br>= University of California, Berkeley
+            <br>= 1998
+        </p>
+        <p>
+            In the original BSD license, both occurrences of the phrase "COPYRIGHT HOLDERS AND CONTRIBUTORS" in the disclaimer read "REGENTS AND CONTRIBUTORS".
+            <br>Here is the license template:
+            <br>Copyright (c) ,
+            <br>All rights reserved.
+        </p>
+        <p>
+            Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+            Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+            Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+            Neither the name of the nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        </p>
+        <p>
+            THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        </p>
+    </section>
+
+
+
+
+
+</body>
+</html>
