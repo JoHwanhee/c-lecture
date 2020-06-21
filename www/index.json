@@ -112,6 +112,13 @@
 			"imagePath" : "/images/1.jpg",
 			"level" : "normal",
 			"indicatorValue" : 30.0
+		},
+		{
+			"title" : "[자료구조] 3. 구조체와 포인터",
+			"path" : "/c/st3.md",
+			"imagePath" : "/images/1.jpg",
+			"level" : "normal",
+			"indicatorValue" : 30.0
 		}
 	]
 }
