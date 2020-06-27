@@ -43,11 +43,11 @@ int main()
     // 구조체 변수 선언
     struct PhoneBookItem* p1 = malloc(sizeof(struct PhoneBookItem));
     
-    // 점으로 구조체 멤버에 접근하여 값 할당
+    // -> 으로 구조체 멤버에 접근하여 값 할당
     strcpy(p1->name, "홍길동");
     strcpy(p1->phone, "010-0000-0000");
 
-    // 점으로 구조체 멤버에 있는 값 출력
+    // -> 으로 구조체 멤버에 있는 값 출력
     printf("이름: %s\n", p1->name);       
     printf("전화번호: %s\n", p1->phone);    
 
