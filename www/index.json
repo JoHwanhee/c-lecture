@@ -119,6 +119,13 @@
 			"imagePath" : "/images/1.jpg",
 			"level" : "normal",
 			"indicatorValue" : 30.0
+		},
+		{
+			"title" : "[C언어 제대로 알기] 오브젝트, 타입, 변수에 대하여",
+			"path" : "/c/obj.md",
+			"imagePath" : "/images/1.jpg",
+			"level" : "normal",
+			"indicatorValue" : 30.0
 		}
 	]
 }
