@@ -1,8 +1,10 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:http/io_client.dart';
 import 'package:intl/intl.dart';
 
 class HexColor extends Color {
@@ -18,19 +20,28 @@ class HexColor extends Color {
 }
 
 class HttpUtil {
+    static IOClient getHttpClient(){
+        bool trustSelfSigned = true;
+        HttpClient httpClient = new HttpClient()
+            ..badCertificateCallback =
+            ((X509Certificate cert, String host, int port) => trustSelfSigned);
+        IOClient ioClient = new IOClient(httpClient);
+        return ioClient;
+    }
+
     static Future<Map<String, dynamic>> httpGetBodyToJson(String url) async {
-        var res = await http.get(url);
+        var res = await getHttpClient().get(url);
         var json = utf8.decode(res.bodyBytes);
         return jsonDecode(json);
     }
 
     static Future<String> httpGetBody(String url) async {
-        var res = await http.get(url);
+        var res = await getHttpClient().get(url);
         return utf8.decode(res.bodyBytes);
     }
 
     static Future<String> httpPost(String url, String body) async {
-        final res = await http.post(
+        final res = await getHttpClient().post(
             url,
             body: body,
             headers: {'Content-Type': "application/json"},
