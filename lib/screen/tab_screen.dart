@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 
+import 'package:c_lecture/const.dart';
+import 'package:c_lecture/model/feeds.dart';
 import 'package:c_lecture/pages/feed_page.dart';
 import 'package:c_lecture/pages/feeds_page.dart';
 import 'package:c_lecture/pages/list_page.dart';
@@ -77,7 +79,7 @@ class _TabScreenState extends State<TabScreen> {
   }
 
   void movePage(message) async {
-    var feed = await FeedService().getFeed(message['data']['id']);
+    var feed = Feed.fromJson(json.decode(message['data']['feed']));
 
     setState(() {
       Navigator.push(
@@ -92,8 +94,22 @@ class _TabScreenState extends State<TabScreen> {
 
     firebaseMessaging.getToken().then((token){
       DeviceUtil.getId(context).then((id) {
-        RegService().postDevice(jsonEncode({"user_id" : id, "device_id": token}));
-        print('token:'+token);
+        RegService().getDevice(id).then((foundDevice) {
+
+
+          if(foundDevice.deviceId != token){
+            Const.device = foundDevice;
+            Const.device.deviceId = token;
+
+            RegService().postDevice(jsonEncode({
+              "user_id": id,
+              "device_id": token,
+              "nickname": foundDevice.nickname
+            })).then((res){
+              print(res);
+            });
+          }
+        });
       });
     });
 
@@ -162,7 +178,7 @@ class _TabScreenState extends State<TabScreen> {
               children: <Widget>[
                 ListPage(title: '강좌'),
                 FeedsPage(title: '담벼락'),
-                SettingPage(title: 'Settings'),
+                SettingPage(title: '설정'),
               ],
             ),
           ),
@@ -178,8 +194,8 @@ class _TabScreenState extends State<TabScreen> {
                 title: Text('담벼락'),
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.exit_to_app),
-                title: Text('나가기'),
+                icon: Icon(Icons.settings),
+                title: Text('설정'),
               ),
             ],
             currentIndex: _page,
@@ -194,12 +210,8 @@ class _TabScreenState extends State<TabScreen> {
   }
 
   void navigationTapped(int page) {
-    if(page == 2)
-      _onWillPop();
-    else{
-      _controller.jumpToPage(page);
-      onPageChanged(page);
-    }
+    _controller.jumpToPage(page);
+    onPageChanged(page);
   }
 
   void onPageChanged(int page) {

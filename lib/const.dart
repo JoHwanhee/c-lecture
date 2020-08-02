@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:c_lecture/model/device.dart';
+
 class Const {
     static const String LectureServerUrl = "https://raw.githubusercontent.com/JoHwanhee/c-lecture/master/www";
     static const String LectureCLangServerUrl = "https://raw.githubusercontent.com/JoHwanhee/c-lecture/master/www/c";
@@ -7,8 +9,10 @@ class Const {
     static const String IndexJsonPath = "/index.json";
     static const String TitleImagePath = "/title.jpg";
 
-    static const String FeedServerUrl = "https://api.c-lecture.ga:49490";
+    static const String FeedServerUrl = "https://api.c-lecture.ga:49497";
 
     static int AdCount = 0;
     static int NativeAdCount = 0;
+
+    static Device device;
 }

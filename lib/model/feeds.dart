@@ -10,9 +10,9 @@ class Feeds {
 
   Feeds.fromJson(Map<String, dynamic> json) {
     code = json['code'];
-    all_count = json['all_count'];
-    page = json['page'];
-    page_size = json['page_size'];
+    all_count = json['meta']['all_count'];
+    page = json['meta']['page'];
+    page_size = json['meta']['page_size'];
     if (json['data'] != null) {
       data = new List<Feed>();
       json['data'].forEach((v) {
@@ -37,6 +37,7 @@ class Feeds {
 class Feed {
   String id;
   String userId;
+  String nickname;
   String content;
   String created;
   bool isNotice;
@@ -49,16 +50,18 @@ class Feed {
         this.userId,
         this.content,
         this.created,
+        this.nickname,
         this.isNotice,
         this.replyCount,
         this.isAdmin,
         this.replies});
 
   Feed.fromJson(Map<String, dynamic> json) {
-    id = json['_id']['\$oid'];
+    id = json['id'];
     userId = json['user_id'];
     content = json['content'];
     created = json['created'];
+    nickname = json['nickname'];
     isNotice = json['is_notice'];
     replyCount = json['reply_count'];
     isAdmin = json['is_admin'];
@@ -73,10 +76,11 @@ class Feed {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
 
-    data['_id'] = this.id;
+    data['id'] = this.id;
     data['user_id'] = this.userId;
     data['content'] = this.content;
     data['created'] = this.created;
+    data['nickname'] = this.nickname;
     data['is_notice'] = this.isNotice;
     data['reply_count'] = this.replyCount;
     data['is_admin'] = this.isAdmin;
@@ -107,13 +111,15 @@ class Replies {
   String userId;
   String content;
   String created;
+  String nickname;
 
-  Replies({this.userId, this.content, this.created});
+  Replies({this.userId, this.content, this.created,  this.nickname});
 
   Replies.fromJson(Map<String, dynamic> json) {
     userId = json['user_id'];
     content = json['content'];
     created = json['created'];
+    nickname = json['nickname'];
   }
 
   Map<String, dynamic> toJson() {
@@ -121,6 +127,7 @@ class Replies {
     data['user_id'] = this.userId;
     data['content'] = this.content;
     data['created'] = this.created;
+    data['nickname'] = this.nickname;
     return data;
   }
 }

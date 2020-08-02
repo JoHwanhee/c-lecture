@@ -52,7 +52,9 @@ class EditorPageState extends State<EditorPage> {
                 "content" : _textController.text,
                 "created" : DateTimeUtils.getUtcString(),
                 "is_notice" : false,
+                'is_admin': false,
                 "reply_count" : 0,
+                "replies": []
               };
 
               print(DateTimeUtils.utcStringToLocalString(DateTimeUtils.getUtcString().split('.')[0]));

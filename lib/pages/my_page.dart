@@ -1,11 +1,17 @@
 import 'dart:convert';
 
 import 'package:c_lecture/model/feeds.dart';
+import 'package:c_lecture/model/lectures.dart';
+import 'package:c_lecture/screen/detail_screen.dart';
 import 'package:c_lecture/services/feed_service.dart';
+import 'package:c_lecture/services/lecture_serivce.dart';
 import 'package:c_lecture/util/util.dart';
+import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
-
-import '../const.dart';
+import 'package:zefyr/zefyr.dart';
+import 'package:flutter/material.dart';
+import 'package:quill_delta/quill_delta.dart';
+import 'package:zefyr/zefyr.dart';
 
 class FeedPage extends StatefulWidget {
   final Feed feed;
@@ -91,8 +97,7 @@ class _FeedPageState extends State<FeedPage> {
       var json = {
         'user_id': res,
         'content': _textController.text,
-        'nickname': Const.device.nickname ?? res,
-        'created': DateTimeUtils.getUtcString(),
+        'created': DateTimeUtils.getUtcString()
       };
       feedService.postReply(feed.id, jsonEncode(json));
 

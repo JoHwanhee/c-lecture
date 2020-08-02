@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
@@ -55,15 +56,22 @@ class DateTimeUtils {
 }
 
 class DeviceUtil {
-
+    static String id;
     static Future<String> getId(context) async {
         DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+        if(id != null && id != ""){
+            return id;
+        }
+
         if (Theme.of(context).platform == TargetPlatform.iOS) {
             IosDeviceInfo iosDeviceInfo = await deviceInfo.iosInfo;
+            id = iosDeviceInfo.identifierForVendor;
             return iosDeviceInfo.identifierForVendor; // unique ID on iOS
         } else {
             AndroidDeviceInfo androidDeviceInfo = await deviceInfo.androidInfo;
             print(androidDeviceInfo.androidId);
+            id = androidDeviceInfo.androidId;
+
             return androidDeviceInfo.androidId; // unique ID on Android
         }
     }

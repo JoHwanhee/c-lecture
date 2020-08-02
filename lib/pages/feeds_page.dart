@@ -142,7 +142,7 @@ class _FeedsPageState extends State<FeedsPage> {
           flex: 0,
           child: Padding(
               padding: EdgeInsets.only(left: 0.0, bottom: 0, top: 3),
-              child: Text(feed.isAdmin ? "관리자" : feed.userId,
+              child: Text(feed.nickname ?? feed.userId,
                   style: TextStyle(color: Colors.grey))),
         ),
         Expanded(
