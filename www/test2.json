@@ -1,0 +1,29 @@
+{
+  "rooms": [
+    {
+      "no": 140,
+      "server_no": 3,
+      "basic_info_no": 1,
+      "creator_user_no": 4770229,
+      "name": "가비아",
+      "url_id": "bdb-d-cNI",
+      "duration": 60,
+      "limit_participants": 10,
+      "expires_at": "2020-08-18T06:31:39.000Z"
+    },
+    {
+      "no": 172,
+      "server_no": 3,
+      "basic_info_no": 1,
+      "creator_user_no": 4770229,
+      "name": "가비아",
+      "url_id": "b5s-d-cOe",
+      "duration": 60,
+      "limit_participants": 10,
+      "expires_at": "2020-08-19T02:19:32.000Z"
+    }
+  ],
+  "total_rooms": 11,
+  "empty_rooms": 9,
+  "use_premium": true
+}
